@@ -1,7 +1,7 @@
-# bio.ajuliacalais
+# bio-ajuliacalais
 
-Página de links (link-in-bio) da **Júlia Calais** — site estático, sem build, sem dependências,
-hospedado no GitHub Pages.
+Página de links (link-in-bio) da **Júlia Calais** — site estático, sem build, sem
+dependências externas, hospedado no GitHub Pages.
 
 Estrutura inspirada em [bio.micaeladicorrado.com](https://bio.micaeladicorrado.com/);
 identidade visual herdada do Media Kit 2026 (creme, marrom, terracota e limão).
@@ -11,47 +11,94 @@ identidade visual herdada do Media Kit 2026 (creme, marrom, terracota e limão).
 ## Estrutura
 
 ```
-index.html              página única
-404.html                erro amigável
+index.html                    home
+cupons-de-desconto/index.html aba de cupons (com botão de copiar o código)
+links-de-produtos/index.html  aba de produtos, agrupada por cômodo
+parceiros/index.html          aba de marcas parceiras
+404.html                      erro amigável
 robots.txt / sitemap.xml
-CNAME.example           modelo do domínio (renomear para CNAME — ver abaixo)
-.nojekyll               desliga o Jekyll no Pages
+CNAME.example                 modelo do domínio (renomear para CNAME)
+.nojekyll                     desliga o Jekyll no Pages
 assets/
-  styles.css            folha de estilo única, com tokens no topo
-  fonts/*.woff2         Playfair Display (SIL OFL 1.1), self-hosted
-  img/
-    hero.jpg            capa
-    serie.jpg           card em destaque
-    og.jpg              preview de compartilhamento (1200×630)
-    icon-32.png         favicon
-    icon-180.png        ícone iOS
+  styles.css                  folha de estilo única, tokens no topo
+  copy-code.js                copiar cupom (só a aba de cupons carrega)
+  fonts/*.woff2               Playfair Display (SIL OFL 1.1), self-hosted
+  media-kit/                  ← COLOQUE O PDF AQUI (ver LEIA-ME.txt)
+  img/                        capa, destaque, preview social e ícones
 ```
 
-Não há build. Editar o HTML e dar push já publica.
+Não há build nem instalação. Editar o HTML e dar push já publica.
+
+### Seções da home
+
+1. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
+2. **Cupons, produtos & parceiros** — entrada para as três abas
+3. **Meu conteúdo** — Instagram e TikTok
+4. **Em destaque** — a série "na minha casa tem"
+5. **Marcas que já passaram por aqui**
+6. **Fala comigo** — e-mail, Instagram, TikTok e localização
 
 ---
 
-## Pendências antes de divulgar
+## O media kit em PDF
 
-Todo link ainda não definido está marcado no HTML com `data-todo`. Para listar:
+O botão da home já aponta para o caminho certo. Basta salvar o arquivo em:
+
+```
+assets/media-kit/media-kit-julia-calais-2026.pdf
+```
+
+com esse nome exato (minúsculo, com hifens, sem acento) e dar push. Enquanto o
+PDF não estiver lá, o botão cai na página 404. Detalhes em
+`assets/media-kit/LEIA-ME.txt`.
+
+---
+
+## Adicionar conteúdo
+
+**Um cupom** — copiar um bloco `<article class="coupon">` em
+`cupons-de-desconto/index.html`, trocando o nome da marca, a descrição, o
+`data-code` (o código em si), o desconto e o `href` da loja. O botão de copiar
+funciona sozinho, não precisa mexer no JS.
+
+**Um produto** — copiar um bloco `<a class="link">` dentro do grupo do cômodo
+certo em `links-de-produtos/index.html`. Para criar um cômodo novo, copiar a
+`<section class="group">` inteira com seu `<p class="eyebrow">`.
+
+**Um parceiro** — mesma coisa em `parceiros/index.html`.
+
+**Um botão na home** — copiar um bloco `.link` dentro de `.links`. Para destacar,
+acrescentar a classe `link--primary` (fundo limão).
+
+> As três abas trazem itens de exemplo com um aviso em destaque no topo. Troque
+> pelo conteúdo real e **apague o `<p class="note">`** antes de divulgar o link.
+
+---
+
+## Pendências
+
+Todo link ainda não definido está marcado com `data-todo` e aparece esmaecido na
+página. Para listar:
 
 ```bash
-grep -n 'data-todo\|TODO(' index.html robots.txt sitemap.xml
+grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xml' .
 ```
 
 | Marcador | O que falta |
 |---|---|
-| `media-kit` | subir o PDF do media kit e apontar o `href` |
+| `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
 | `tiktok-handle` | confirmar o @ do TikTok (presumi o mesmo do Instagram) |
-| `serie-na-minha-casa-tem` | link de "Achados & indicações" |
-| `serie-colecao` | link da coleção/destaque da série no Instagram |
-| `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em `index.html`, `robots.txt` e `sitemap.xml` |
+| `serie-colecao` | link da coleção da série no Instagram |
+| `loja-codigo1…3` | cupons reais + endereço de cada loja |
+| `produto-*` | produtos reais + link de cada um |
+| `parceiro-*` | endereço de cada marca (os nomes já são os reais) |
+| `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
-Os links de **e-mail, WhatsApp e Instagram já estão reais** e funcionando.
+**E-mail e Instagram já estão reais e funcionando.**
 
 ---
 
-## Personalizar
+## Personalizar o visual
 
 Tudo que é cor, fonte e largura está em `assets/styles.css`, no bloco `:root`:
 
@@ -63,15 +110,21 @@ Tudo que é cor, fonte e largura está em `assets/styles.css`, no bloco `:root`:
 --col:    500px;     /* largura da coluna      */
 ```
 
-**Adicionar um botão** — copiar um bloco `.link` dentro de `.links`.
-**Botão de destaque** — acrescentar a classe `link--primary`.
-**Nova seção** — copiar um `<section>` com seu `<p class="eyebrow">`.
+---
+
+## Ver localmente
+
+```bash
+python3 -m http.server 8080
+```
+
+E abrir <http://localhost:8080>.
 
 ---
 
 ## Publicar
 
-O site sai do branch `main`, pasta raiz. Publicação:
+O site sai do branch `main`, pasta raiz:
 
 ```bash
 git add -A && git commit -m "atualiza links" && git push
@@ -81,13 +134,14 @@ O Pages republica sozinho em ~1 minuto.
 
 > **Atenção:** GitHub Pages em repositório **privado** exige plano pago
 > (Pro/Team/Enterprise). Em conta gratuita é preciso deixar o repositório
-> público para o Pages servir a página.
+> público para o Pages servir a página — ou hospedar no Cloudflare Pages /
+> Netlify, que servem repositório privado de graça.
 
 ---
 
 ## Domínio próprio
 
-1. Renomear `CNAME.example` para `CNAME` e colocar dentro **só** o domínio final,
+1. Renomear `CNAME.example` para `CNAME` e deixar dentro **só** o domínio final,
    sem `https://` e sem barra — ex.: `bio.juliacalais.com.br`
 2. No DNS do domínio, criar um registro **CNAME**:
 
@@ -95,16 +149,16 @@ O Pages republica sozinho em ~1 minuto.
    |---|---|---|
    | CNAME | `bio` | `gocasimiro.github.io` |
 
-   Para domínio raiz (`juliacalais.com.br`, sem subdomínio), usar 4 registros **A**
-   apontando para `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+   Para domínio raiz (sem subdomínio), usar 4 registros **A** apontando para
+   `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`.
 3. Em **Settings → Pages → Custom domain**, informar o domínio e aguardar a validação.
-4. Marcar **Enforce HTTPS** assim que o certificado for emitido (leva alguns minutos).
-5. Trocar o domínio nos `TODO(dns)` do `index.html`, `robots.txt` e `sitemap.xml`.
+4. Marcar **Enforce HTTPS** assim que o certificado sair (leva alguns minutos).
+5. Trocar o domínio em todos os `TODO(dns)`.
 
-> O `404.html` usa caminhos absolutos (`/assets/...`), o que é o certo para domínio
-> próprio. Se você testar na URL de projeto do Pages
-> (`gocasimiro.github.io/bio-ajuliacalais/`), o 404 aparece sem estilo — a página
-> principal continua normal.
+> O `404.html` usa caminhos absolutos (`/assets/...`), o que é o certo para
+> domínio próprio. Se você testar na URL de projeto do Pages
+> (`gocasimiro.github.io/bio-ajuliacalais/`), só o 404 aparece sem estilo — as
+> demais páginas usam caminhos relativos e funcionam nos dois casos.
 
 ---
 

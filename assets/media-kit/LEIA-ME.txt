@@ -1,0 +1,18 @@
+COLOQUE O PDF DO MEDIA KIT NESTA PASTA
+======================================
+
+O botão "Media Kit 2026" na página inicial aponta para:
+
+    assets/media-kit/media-kit-julia-calais-2026.pdf
+
+Então basta salvar o PDF aqui com EXATAMENTE esse nome
+(tudo minúsculo, com hifens, sem acento) e dar push:
+
+    git add -A
+    git commit -m "adiciona o media kit"
+    git push
+
+Se preferir outro nome de arquivo, troque também o href do botão
+no index.html (procure por data-todo="media-kit-pdf").
+
+Enquanto o PDF não estiver aqui, o botão leva para a página 404.
