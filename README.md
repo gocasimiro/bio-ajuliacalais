@@ -101,6 +101,11 @@ O Pages republica sozinho em ~1 minuto.
 4. Marcar **Enforce HTTPS** assim que o certificado for emitido (leva alguns minutos).
 5. Trocar o domínio nos `TODO(dns)` do `index.html`, `robots.txt` e `sitemap.xml`.
 
+> O `404.html` usa caminhos absolutos (`/assets/...`), o que é o certo para domínio
+> próprio. Se você testar na URL de projeto do Pages
+> (`gocasimiro.github.io/bio-ajuliacalais/`), o 404 aparece sem estilo — a página
+> principal continua normal.
+
 ---
 
 ## Licença
