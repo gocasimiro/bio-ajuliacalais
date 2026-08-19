@@ -99,7 +99,7 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 | `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
 **Já estão reais e funcionando:** e-mail, Instagram, os 4 cupons de desconto e
-as 7 marcas parceiras. Falta só o media kit em PDF, os achadinhos e o link da
+as 12 marcas parceiras. Falta só o media kit em PDF, os achadinhos e o link da
 série.
 
 ### Endereços conferidos
@@ -111,6 +111,11 @@ direto no destino final, sem salto de redirecionamento:
 |---|---|---|
 | `http://selvvva.com/` | `https://selvvva.com/` | o próprio site redireciona para HTTPS |
 | `https://parafuzo.com.br/` | `https://parafuzo.com/` | o `.com.br` redireciona para o `.com` |
+
+O perfil `instagram.com/atelierdarenat` **não deu para verificar** — o Instagram
+bloqueia leitura sem login. O endereço foi publicado exatamente como veio, mas
+o handle parece cortado (o natural seria `atelierdarenata`). Vale abrir uma vez
+para confirmar.
 
 ---
 
