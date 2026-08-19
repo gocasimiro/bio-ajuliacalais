@@ -2,10 +2,11 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <title>Cupons de desconto — Júlia Calais</title>
 <meta name="description" content="Todos os cupons de desconto da Júlia Calais reunidos em um lugar só, sempre atualizados.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#FBF8DE">
 <meta name="author" content="Júlia Calais">
 
@@ -21,17 +22,48 @@
 <meta property="og:image" content="https://bio.juliacalais.com.br/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Júlia Calais sorrindo, sobre fundo laranja">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cupons de desconto — Júlia Calais">
+<meta name="twitter:description" content="Todos os cupons de desconto da Júlia Calais reunidos em um lugar só, sempre atualizados.">
+<meta name="twitter:image" content="https://bio.juliacalais.com.br/assets/img/og.jpg">
 
 <link rel="icon" href="../assets/img/icon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/img/icon-180.png">
 
 <link rel="preload" href="../assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"CollectionPage",
+      "@id":"https://bio.juliacalais.com.br/cupons-de-desconto/#pagina",
+      "url":"https://bio.juliacalais.com.br/cupons-de-desconto/",
+      "name":"Cupons de desconto — Júlia Calais",
+      "description":"Todos os cupons de desconto da Júlia Calais reunidos em um lugar só, sempre atualizados.",
+      "inLanguage":"pt-BR",
+      "isPartOf":{"@id":"https://bio.juliacalais.com.br/#site"},
+      "about":{"@id":"https://bio.juliacalais.com.br/#pessoa"}
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Júlia Calais","item":"https://bio.juliacalais.com.br/"},
+        {"@type":"ListItem","position":2,"name":"Cupons de desconto","item":"https://bio.juliacalais.com.br/cupons-de-desconto/"}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
-<main class="page">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="page page--inner">
 
   <div class="topbar">
     <a class="back" href="../"><span aria-hidden="true">←</span> Júlia Calais</a>
@@ -42,64 +74,69 @@
     <p>Todos os meus códigos reunidos aqui. Toque no cupom para copiar. Se algum tiver expirado, me avisa no direct que eu atualizo.</p>
   </div>
 
-  <nav aria-label="Seções">
-    <ul class="tabs">
-      <li><a href="./" aria-current="page">Cupons de desconto</a></li>
-      <li><a href="../links-de-produtos/">Links de produtos</a></li>
-      <li><a href="../parceiros/">Links parceiros</a></li>
-    </ul>
-  </nav>
+  <div class="tabs-wrap">
+    <nav aria-label="Seções de links">
+      <ul class="tabs">
+        <li><a href="./" aria-current="page">Cupons de desconto</a></li>
+        <li><a href="../parceiros/">Links parceiros</a></li>
+        <li><a href="../links-de-produtos/">Links de achadinhos</a></li>
+      </ul>
+    </nav>
+  </div>
 
-  <p class="note"><b>Este bloco é um modelo.</b> Os itens abaixo servem só para você ver o estilo pronto — troque pelo conteúdo real e apague este aviso antes de divulgar o link.</p>
+  <main id="conteudo">
 
-  <section class="group">
-    <p class="eyebrow">Cupons ativos</p>
-    <div class="coupons">
-      <article class="coupon">
-        <h2 class="coupon__brand">Nome da marca 1</h2>
-        <p class="coupon__desc">Descrição curta do que a marca vende.</p>
-        <div class="coupon__row">
-          <button type="button" class="coupon__code" data-code="CODIGO1" aria-label="Copiar o cupom CODIGO1">
-            CODIGO1 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
-          </button>
-          <span class="coupon__off">10% de desconto</span>
-        </div>
-        <!-- TODO(link): endereço da loja -->
-        <a class="coupon__cta" href="#" data-todo="loja-codigo1" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="coupon">
-        <h2 class="coupon__brand">Nome da marca 2</h2>
-        <p class="coupon__desc">Descrição curta do que a marca vende.</p>
-        <div class="coupon__row">
-          <button type="button" class="coupon__code" data-code="CODIGO2" aria-label="Copiar o cupom CODIGO2">
-            CODIGO2 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
-          </button>
-          <span class="coupon__off">15% de desconto</span>
-        </div>
-        <!-- TODO(link): endereço da loja -->
-        <a class="coupon__cta" href="#" data-todo="loja-codigo2" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="coupon">
-        <h2 class="coupon__brand">Nome da marca 3</h2>
-        <p class="coupon__desc">Descrição curta do que a marca vende.</p>
-        <div class="coupon__row">
-          <button type="button" class="coupon__code" data-code="CODIGO3" aria-label="Copiar o cupom CODIGO3">
-            CODIGO3 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
-          </button>
-          <span class="coupon__off">Frete grátis</span>
-        </div>
-        <!-- TODO(link): endereço da loja -->
-        <a class="coupon__cta" href="#" data-todo="loja-codigo3" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
-      </article>
-    </div>
-  </section>
+    <p class="note"><b>Este bloco é um modelo.</b> Os itens abaixo servem só para você ver o estilo pronto — troque pelo conteúdo real e apague este aviso antes de divulgar o link.</p>
 
+    <section class="group" aria-labelledby="g-cupons">
+      <h2 class="eyebrow" id="g-cupons">Cupons ativos</h2>
+      <div class="coupons">
+        <article class="coupon">
+          <h3 class="coupon__brand">Nome da marca 1</h3>
+          <p class="coupon__desc">Descrição curta do que a marca vende.</p>
+          <div class="coupon__row">
+            <button type="button" class="coupon__code" data-code="CODIGO1" aria-label="Copiar o cupom CODIGO1">
+              CODIGO1 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            </button>
+            <span class="coupon__off">10% de desconto</span>
+          </div>
+          <!-- TODO(link): endereço da loja -->
+          <a class="coupon__cta" href="#" data-todo="loja-codigo1" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="coupon">
+          <h3 class="coupon__brand">Nome da marca 2</h3>
+          <p class="coupon__desc">Descrição curta do que a marca vende.</p>
+          <div class="coupon__row">
+            <button type="button" class="coupon__code" data-code="CODIGO2" aria-label="Copiar o cupom CODIGO2">
+              CODIGO2 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            </button>
+            <span class="coupon__off">15% de desconto</span>
+          </div>
+          <!-- TODO(link): endereço da loja -->
+          <a class="coupon__cta" href="#" data-todo="loja-codigo2" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="coupon">
+          <h3 class="coupon__brand">Nome da marca 3</h3>
+          <p class="coupon__desc">Descrição curta do que a marca vende.</p>
+          <div class="coupon__row">
+            <button type="button" class="coupon__code" data-code="CODIGO3" aria-label="Copiar o cupom CODIGO3">
+              CODIGO3 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            </button>
+            <span class="coupon__off">Frete grátis</span>
+          </div>
+          <!-- TODO(link): endereço da loja -->
+          <a class="coupon__cta" href="#" data-todo="loja-codigo3" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="foot">
     <span>Júlia Calais · 2026</span>
   </footer>
 
-</main>
+</div>
 <script src="../assets/copy-code.js" defer></script>
 </body>
 </html>

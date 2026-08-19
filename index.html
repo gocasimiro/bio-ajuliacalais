@@ -2,17 +2,18 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <title>Júlia Calais — meus links</title>
-<meta name="description" content="Palpiteira de decoração e defensora das paredes coloridas. Contato para publicidade, media kit, cupons de desconto, links de produtos e parceiros — tudo reunido aqui.">
+<meta name="description" content="Palpiteira de decoração e defensora das paredes coloridas. Contato para publicidade, media kit, cupons de desconto, links parceiros e achadinhos — tudo reunido em um lugar só.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#FBF8DE">
 <meta name="author" content="Júlia Calais">
 
 <!-- TODO(dns): trocar pelo domínio final quando o DNS estiver apontado -->
 <link rel="canonical" href="https://bio.juliacalais.com.br/">
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Júlia Calais">
 <meta property="og:title" content="Júlia Calais — meus links">
@@ -22,7 +23,13 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Júlia Calais sorrindo, sobre fundo laranja">
+<meta property="profile:first_name" content="Júlia">
+<meta property="profile:last_name" content="Calais">
+<meta property="profile:username" content="ajuliacalais">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Júlia Calais — meus links">
+<meta name="twitter:description" content="Palpiteira de decoração e defensora das paredes coloridas.">
+<meta name="twitter:image" content="https://bio.juliacalais.com.br/assets/img/og.jpg">
 
 <link rel="icon" href="assets/img/icon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/icon-180.png">
@@ -33,179 +40,193 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Júlia Calais",
-  "alternateName":"@ajuliacalais",
-  "description":"Palpiteira de decoração e defensora das paredes coloridas",
-  "email":"juliacalais@gmail.com",
-  "address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},
-  "sameAs":["https://www.instagram.com/ajuliacalais/","https://www.tiktok.com/@ajuliacalais"]
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://bio.juliacalais.com.br/#site",
+      "url":"https://bio.juliacalais.com.br/",
+      "name":"Júlia Calais",
+      "inLanguage":"pt-BR",
+      "publisher":{"@id":"https://bio.juliacalais.com.br/#pessoa"}
+    },
+    {
+      "@type":"ProfilePage",
+      "@id":"https://bio.juliacalais.com.br/#pagina",
+      "url":"https://bio.juliacalais.com.br/",
+      "name":"Júlia Calais — meus links",
+      "isPartOf":{"@id":"https://bio.juliacalais.com.br/#site"},
+      "about":{"@id":"https://bio.juliacalais.com.br/#pessoa"},
+      "inLanguage":"pt-BR"
+    },
+    {
+      "@type":"Person",
+      "@id":"https://bio.juliacalais.com.br/#pessoa",
+      "name":"Júlia Calais",
+      "alternateName":"@ajuliacalais",
+      "description":"Palpiteira de decoração e defensora das paredes coloridas",
+      "jobTitle":"Criadora de conteúdo de decoração",
+      "image":"https://bio.juliacalais.com.br/assets/img/og.jpg",
+      "email":"juliacalais@gmail.com",
+      "address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},
+      "sameAs":["https://www.instagram.com/ajuliacalais/"]
+    }
+  ]
 }
 </script>
 </head>
 
 <body>
-<main class="page">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- ══ capa ══ -->
-  <div class="cover">
-    <img src="assets/img/hero.jpg" width="950" height="1045" alt="Júlia Calais sorrindo, sobre um fundo laranja" fetchpriority="high">
+<div class="page page--home">
+
+  <!-- ══ trilho: retrato, nome e redes (fixo no desktop) ══ -->
+  <div class="rail">
+    <div class="cover">
+      <img src="assets/img/hero.jpg" width="950" height="1045" alt="Júlia Calais sorrindo, sobre um fundo laranja" fetchpriority="high">
+    </div>
+
+    <header>
+      <h1 class="name">Júlia Calais</h1>
+      <p class="handle">@ajuliacalais · São Paulo, SP</p>
+      <p class="bio">Palpiteira de decoração e defensora das paredes coloridas.</p>
+    </header>
+
+    <p class="socials-label" id="redes">Me acompanhe por aqui</p>
+    <ul class="socials" aria-labelledby="redes">
+      <li><a href="https://www.instagram.com/ajuliacalais/" aria-label="Instagram de Júlia Calais" rel="me noopener" target="_blank">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13.67.66 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.13-1.38.66-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.93 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+      </a></li>
+      <li><a href="mailto:juliacalais@gmail.com" aria-label="Enviar e-mail para Júlia Calais">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 5h19c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1h-19c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1Zm.5 2.2V17.5h18V7.2l-8.53 5.75a.9.9 0 0 1-1 0L3 7.2Zm.9-.7L12 11.9 20.1 6.5H3.9Z"/></svg>
+      </a></li>
+    </ul>
   </div>
 
-  <!-- ══ cabeçalho ══ -->
-  <header>
-    <h1 class="name">Júlia Calais</h1>
-    <p class="handle">@ajuliacalais · São Paulo, SP</p>
-    <p class="bio">Palpiteira de decoração e defensora das paredes coloridas.</p>
-  </header>
+  <!-- ══ conteúdo ══ -->
+  <main class="content" id="conteudo">
 
-  <!-- ══ redes ══ -->
-  <p class="socials-label">Me acompanhe por aqui</p>
-  <ul class="socials">
-    <li><a href="https://www.instagram.com/ajuliacalais/" aria-label="Instagram" rel="me noopener" target="_blank">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13.67.66 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.13-1.38.66-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.93 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
-    </a></li>
-    <li><a href="https://www.tiktok.com/@ajuliacalais" aria-label="TikTok" rel="me noopener" target="_blank">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 1 1 .77-5.06V9.66a5.67 5.67 0 0 0-.77-.05A5.68 5.68 0 1 0 15.54 15V8.99a7.34 7.34 0 0 0 4.29 1.37V7.28a4.29 4.29 0 0 1-3.23-1.46Z"/></svg>
-    </a></li>
-    <li><a href="mailto:juliacalais@gmail.com" aria-label="E-mail">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5h19c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1h-19c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1Zm.5 2.2V17.5h18V7.2l-8.53 5.75a.9.9 0 0 1-1 0L3 7.2Zm.9-.7L12 11.9 20.1 6.5H3.9Z"/></svg>
-    </a></li>
-  </ul>
+    <!-- ── 1 · publicidade ── -->
+    <section aria-labelledby="s-publicidade">
+      <h2 class="eyebrow" id="s-publicidade">Bora trabalhar juntos?</h2>
+      <div class="links">
 
-  <!-- ══════════ 1 · PUBLICIDADE ══════════ -->
-  <section>
-    <p class="eyebrow">Bora trabalhar juntos?</p>
-    <div class="links">
+        <a class="link link--primary" href="mailto:juliacalais@gmail.com?subject=Proposta%20de%20parceria%20%E2%80%94%20%40ajuliacalais">
+          <span class="link__text">
+            <span class="link__title">Contato para publicidade</span>
+            <span class="link__sub">juliacalais@gmail.com</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
 
-      <a class="link link--primary" href="mailto:juliacalais@gmail.com?subject=Proposta%20de%20parceria%20%E2%80%94%20%40ajuliacalais">
-        <span class="link__text">
-          <span class="link__title">Contato para publicidade</span>
-          <span class="link__sub">juliacalais@gmail.com</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">↗</span>
-      </a>
+        <!-- TODO(arquivo): colocar o PDF em assets/media-kit/ com este nome exato -->
+        <a class="link" href="assets/media-kit/media-kit-julia-calais-2026.pdf" target="_blank" rel="noopener" type="application/pdf" data-todo="media-kit-pdf">
+          <span class="link__text">
+            <span class="link__title">Media Kit 2026</span>
+            <span class="link__sub">PDF · números, formatos e parcerias</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
 
-      <!-- TODO(arquivo): colocar o PDF em assets/media-kit/ com este nome exato -->
-      <a class="link" href="assets/media-kit/media-kit-julia-calais-2026.pdf" target="_blank" rel="noopener" data-todo="media-kit-pdf">
-        <span class="link__text">
-          <span class="link__title">Media Kit 2026</span>
-          <span class="link__sub">PDF · números, formatos e parcerias</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">↗</span>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ══════════ 2 · CUPONS, PRODUTOS E PARCEIROS ══════════ -->
-  <section>
-    <p class="eyebrow">Cupons, produtos &amp; parceiros</p>
-    <div class="links">
-
-      <a class="link" href="cupons-de-desconto/">
-        <span class="link__text">
-          <span class="link__title">Cupons de desconto</span>
-          <span class="link__sub">Meus códigos, sempre atualizados</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">→</span>
-      </a>
-
-      <a class="link" href="links-de-produtos/">
-        <span class="link__text">
-          <span class="link__title">Links de produtos</span>
-          <span class="link__sub">O que eu uso e onde eu comprei</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">→</span>
-      </a>
-
-      <a class="link" href="parceiros/">
-        <span class="link__text">
-          <span class="link__title">Links parceiros</span>
-          <span class="link__sub">As marcas que andam comigo</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">→</span>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ══════════ 3 · CONTEÚDO ══════════ -->
-  <section>
-    <p class="eyebrow">Meu conteúdo</p>
-    <div class="links">
-
-      <a class="link" href="https://www.instagram.com/ajuliacalais/" rel="me noopener" target="_blank">
-        <span class="link__text">
-          <span class="link__title">Instagram</span>
-          <span class="link__sub">@ajuliacalais · a casa sendo construída</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">↗</span>
-      </a>
-
-      <!-- TODO(link): confirmar o @ do TikTok — presumi o mesmo do Instagram -->
-      <a class="link" href="https://www.tiktok.com/@ajuliacalais" rel="me noopener" target="_blank" data-todo="tiktok-handle">
-        <span class="link__text">
-          <span class="link__title">TikTok</span>
-          <span class="link__sub">Referências e decoração acessível</span>
-        </span>
-        <span class="link__arrow" aria-hidden="true">↗</span>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ══════════ 4 · DESTAQUE ══════════ -->
-  <section>
-    <p class="eyebrow">Em destaque</p>
-    <article class="feature">
-      <img src="assets/img/serie.jpg" width="182" height="202" alt="Frame da série de vídeos “na minha casa tem”, mostrando um corredor colorido" loading="lazy">
-      <div class="feature__body">
-        <h2 class="feature__title">na minha casa tem</h2>
-        <p class="feature__desc">A série que virou minha marca: episódios curtos passeando por cada canto da casa que estou construindo aos poucos — com os achados, os erros, os acertos e muita parede colorida.</p>
-        <!-- TODO(link): apontar para a coleção da série no Instagram -->
-        <a class="feature__cta" href="#" data-todo="serie-colecao">Ver a série <span aria-hidden="true">↗</span></a>
       </div>
-    </article>
-  </section>
+    </section>
 
-  <!-- ══════════ 5 · MARCAS ══════════ -->
-  <section>
-    <p class="eyebrow">Marcas que já passaram por aqui</p>
-    <ul class="brands">
-      <li>WestWing</li><li>Mimo Galeria</li><li>Estúdio Joá</li><li>Atelier da Renata</li>
-      <li>Selvvva</li><li>KokeSampa</li><li>Desfiacoco</li><li>Todo Recado</li>
-      <li>Helinha Decor</li><li>Doo Ceramics</li><li>Edu Euka</li>
-    </ul>
-  </section>
+    <!-- ── 2 · cupons, parceiros e achadinhos ── -->
+    <section aria-labelledby="s-cupons">
+      <h2 class="eyebrow" id="s-cupons">Cupons, parceiros &amp; achadinhos</h2>
+      <div class="links">
 
-  <!-- ══════════ 6 · CONTATO ══════════ -->
-  <section>
-    <p class="eyebrow">Fala comigo</p>
-    <dl class="contact">
-      <div>
-        <dt>E-mail</dt>
-        <dd><a href="mailto:juliacalais@gmail.com">juliacalais@gmail.com</a></dd>
+        <a class="link" href="cupons-de-desconto/">
+          <span class="link__text">
+            <span class="link__title">Cupons de desconto</span>
+            <span class="link__sub">Meus códigos, sempre atualizados</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="link" href="parceiros/">
+          <span class="link__text">
+            <span class="link__title">Links parceiros</span>
+            <span class="link__sub">As marcas que andam comigo</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="link" href="links-de-produtos/">
+          <span class="link__text">
+            <span class="link__title">Links de achadinhos</span>
+            <span class="link__sub">O que eu uso e onde eu comprei</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">→</span>
+        </a>
+
       </div>
-      <div>
-        <dt>Instagram</dt>
-        <dd><a href="https://www.instagram.com/ajuliacalais/" rel="me noopener" target="_blank">@ajuliacalais</a></dd>
+    </section>
+
+    <!-- ── 3 · conteúdo ── -->
+    <section aria-labelledby="s-conteudo">
+      <h2 class="eyebrow" id="s-conteudo">Meu conteúdo</h2>
+      <div class="links">
+
+        <a class="link" href="https://www.instagram.com/ajuliacalais/" rel="me noopener" target="_blank">
+          <span class="link__text">
+            <span class="link__title">Instagram</span>
+            <span class="link__sub">@ajuliacalais · a casa sendo construída</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
       </div>
-      <div>
-        <dt>TikTok</dt>
-        <dd><a href="https://www.tiktok.com/@ajuliacalais" rel="me noopener" target="_blank">@ajuliacalais</a></dd>
-      </div>
-      <div>
-        <dt>Localização</dt>
-        <dd>São Paulo, SP</dd>
-      </div>
-    </dl>
-  </section>
+    </section>
+
+    <!-- ── 4 · destaque ── -->
+    <section aria-labelledby="s-destaque">
+      <h2 class="eyebrow" id="s-destaque">Em destaque</h2>
+      <article class="feature">
+        <img src="assets/img/serie.jpg" width="182" height="202" alt="Frame da série de vídeos “na minha casa tem”, mostrando um corredor colorido" loading="lazy" decoding="async">
+        <div class="feature__body">
+          <h3 class="feature__title">na minha casa tem</h3>
+          <p class="feature__desc">A série que virou minha marca: episódios curtos passeando por cada canto da casa que estou construindo aos poucos — com os achados, os erros, os acertos e muita parede colorida.</p>
+          <!-- TODO(link): apontar para a coleção da série no Instagram -->
+          <a class="feature__cta" href="#" data-todo="serie-colecao">Ver a série <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ── 5 · marcas ── -->
+    <section aria-labelledby="s-marcas">
+      <h2 class="eyebrow" id="s-marcas">Marcas que já passaram por aqui</h2>
+      <ul class="brands">
+        <li>WestWing</li><li>Mimo Galeria</li><li>Estúdio Joá</li><li>Atelier da Renata</li>
+        <li>Selvvva</li><li>KokeSampa</li><li>Desfiacoco</li><li>Todo Recado</li>
+        <li>Helinha Decor</li><li>Doo Ceramics</li><li>Edu Euka</li>
+      </ul>
+    </section>
+
+    <!-- ── 6 · contato ── -->
+    <section aria-labelledby="s-contato">
+      <h2 class="eyebrow" id="s-contato">Fala comigo</h2>
+      <dl class="contact">
+        <div>
+          <dt>E-mail</dt>
+          <dd><a href="mailto:juliacalais@gmail.com">juliacalais@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/ajuliacalais/" rel="me noopener" target="_blank">@ajuliacalais</a></dd>
+        </div>
+        <div>
+          <dt>Localização</dt>
+          <dd>São Paulo, SP</dd>
+        </div>
+      </dl>
+    </section>
+
+  </main>
 
   <footer class="foot">
     <span>Júlia Calais · 2026</span>
   </footer>
 
-</main>
+</div>
 </body>
 </html>

@@ -13,8 +13,8 @@ identidade visual herdada do Media Kit 2026 (creme, marrom, terracota e limão).
 ```
 index.html                    home
 cupons-de-desconto/index.html aba de cupons (com botão de copiar o código)
-links-de-produtos/index.html  aba de produtos, agrupada por cômodo
 parceiros/index.html          aba de marcas parceiras
+links-de-produtos/index.html  aba de achadinhos, agrupada por cômodo
 404.html                      erro amigável
 robots.txt / sitemap.xml
 CNAME.example                 modelo do domínio (renomear para CNAME)
@@ -32,11 +32,18 @@ Não há build nem instalação. Editar o HTML e dar push já publica.
 ### Seções da home
 
 1. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
-2. **Cupons, produtos & parceiros** — entrada para as três abas
-3. **Meu conteúdo** — Instagram e TikTok
+2. **Cupons, parceiros & achadinhos** — entrada para as três abas
+3. **Meu conteúdo** — Instagram
 4. **Em destaque** — a série "na minha casa tem"
 5. **Marcas que já passaram por aqui**
-6. **Fala comigo** — e-mail, Instagram, TikTok e localização
+6. **Fala comigo** — e-mail, Instagram e localização
+
+### Rótulo × rota
+
+A aba de achadinhos aparece como **"Links de achadinhos"**, mas a rota continua
+sendo `/links-de-produtos/`. Isso é de propósito: o rótulo é o que a pessoa lê,
+a rota é o que o Google já indexou. Trocar a URL derrubaria o histórico de
+posicionamento — se um dia for preciso mudar mesmo, tem que vir com redirect.
 
 ---
 
@@ -61,9 +68,9 @@ PDF não estiver lá, o botão cai na página 404. Detalhes em
 `data-code` (o código em si), o desconto e o `href` da loja. O botão de copiar
 funciona sozinho, não precisa mexer no JS.
 
-**Um produto** — copiar um bloco `<a class="link">` dentro do grupo do cômodo
+**Um achadinho** — copiar um bloco `<a class="link">` dentro do grupo do cômodo
 certo em `links-de-produtos/index.html`. Para criar um cômodo novo, copiar a
-`<section class="group">` inteira com seu `<p class="eyebrow">`.
+`<section class="group">` inteira com seu `<h2 class="eyebrow">`.
 
 **Um parceiro** — mesma coisa em `parceiros/index.html`.
 
@@ -87,14 +94,51 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 | Marcador | O que falta |
 |---|---|
 | `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
-| `tiktok-handle` | confirmar o @ do TikTok (presumi o mesmo do Instagram) |
 | `serie-colecao` | link da coleção da série no Instagram |
 | `loja-codigo1…3` | cupons reais + endereço de cada loja |
-| `produto-*` | produtos reais + link de cada um |
+| `achadinho-*` | achadinhos reais + link de cada um |
 | `parceiro-*` | endereço de cada marca (os nomes já são os reais) |
 | `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
 **E-mail e Instagram já estão reais e funcionando.**
+
+---
+
+## Responsividade
+
+Um único sistema de grades, controlado por variáveis CSS (`--pad`, `--col`, `--gap`):
+
+| Grade | Largura | Comportamento |
+|---|---|---|
+| Celular | até 599px | coluna cheia, capa sangrando nas bordas, abas rolando de lado |
+| Tablet | ≥ 600px | coluna de 600px, capa emoldurada, listas em duas colunas |
+| Desktop | ≥ 1024px | home em duas colunas — retrato fixo à esquerda, conteúdo rolando à direita; contato em quatro colunas |
+| Telas largas | ≥ 1440px | coluna de 1160px, trilho um pouco mais largo |
+
+Detalhes que sustentam a navegação em qualquer tela:
+
+- **Abas fixas** no topo das páginas internas — sempre alcançáveis ao rolar
+- Alvos de toque de **44px** nos ícones, abas e botões de cupom
+- Item ímpar sobrando no fim de uma lista ocupa a linha inteira, sem buraco
+- Link **"pular para o conteúdo"** para teclado e leitor de tela
+- `scroll-behavior:smooth`, desligado para quem pede menos movimento
+- Folha de impressão enxuta
+
+---
+
+## SEO
+
+- `<title>` e `<meta description>` próprios em cada página
+- `canonical`, Open Graph e Twitter Card em todas as páginas indexáveis
+- **JSON-LD**: `WebSite` + `ProfilePage` + `Person` na home; `CollectionPage` +
+  `BreadcrumbList` nas abas
+- Hierarquia de títulos correta — um `h1` por página, seções em `h2`, itens em `h3`
+- `sitemap.xml` com as quatro URLs e `robots.txt` liberando tudo
+- `404.html` com `noindex, follow`
+- Imagens com `width`/`height` declarados (não há salto de layout ao carregar),
+  `alt` descritivo, `loading="lazy"` fora da dobra
+- Fonte self-hosted com `preload` — sem requisição a terceiros
+- `rel="noopener sponsored"` nos links de afiliado das abas
 
 ---
 

@@ -2,7 +2,7 @@
 <!-- TODO(dns): trocar o domínio quando o DNS estiver apontado -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://bio.juliacalais.com.br/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://bio.juliacalais.com.br/cupons-de-desconto/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bio.juliacalais.com.br/cupons-de-desconto/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://bio.juliacalais.com.br/parceiros/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://bio.juliacalais.com.br/links-de-produtos/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bio.juliacalais.com.br/parceiros/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
