@@ -36,23 +36,108 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type":"CollectionPage",
-      "@id":"https://bio.juliacalais.com.br/parceiros/#pagina",
-      "url":"https://bio.juliacalais.com.br/parceiros/",
-      "name":"Links parceiros — Júlia Calais",
-      "description":"As marcas parceiras da Júlia Calais — decoração, cerâmica, arte e achados para casa.",
-      "inLanguage":"pt-BR",
-      "isPartOf":{"@id":"https://bio.juliacalais.com.br/#site"},
-      "about":{"@id":"https://bio.juliacalais.com.br/#pessoa"}
+      "@type": "CollectionPage",
+      "@id": "https://bio.juliacalais.com.br/parceiros/#pagina",
+      "url": "https://bio.juliacalais.com.br/parceiros/",
+      "name": "Links parceiros — Júlia Calais",
+      "description": "As marcas parceiras da Júlia Calais — decoração, cerâmica, arte e achados para casa.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://bio.juliacalais.com.br/#site"
+      },
+      "about": {
+        "@id": "https://bio.juliacalais.com.br/#pessoa"
+      }
     },
     {
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Júlia Calais","item":"https://bio.juliacalais.com.br/"},
-        {"@type":"ListItem","position":2,"name":"Links parceiros","item":"https://bio.juliacalais.com.br/parceiros/"}
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Júlia Calais",
+          "item": "https://bio.juliacalais.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Links parceiros",
+          "item": "https://bio.juliacalais.com.br/parceiros/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Marcas parceiras — Júlia Calais",
+      "numberOfItems": 7,
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Organization",
+            "name": "WestWing",
+            "url": "https://www.westwing.com.br/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Organization",
+            "name": "Selvvva",
+            "url": "https://selvvva.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Organization",
+            "name": "Parafuzo",
+            "url": "https://parafuzo.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Organization",
+            "name": "Mimo Galeria",
+            "url": "https://www.mimogaleria.com.br/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Organization",
+            "name": "KokeSampa",
+            "url": "https://www.kokesampa.com.br/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Organization",
+            "name": "Helinha Decor",
+            "url": "https://www.helinhadecor.com.br/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Organization",
+            "name": "Estúdio Joá",
+            "url": "https://estudiojoa.com.br/"
+          }
+        }
       ]
     }
   ]
@@ -86,8 +171,6 @@
 
   <main id="conteudo">
 
-    <p class="note"><b>Faltam alguns endereços.</b> As marcas com cupom já estão ligadas; as demais ainda precisam do <code>href</code> preenchido (e aí é só apagar este aviso).</p>
-
     <section class="group" aria-labelledby="g-parceiros">
       <h2 class="eyebrow" id="g-parceiros">Marcas parceiras</h2>
       <div class="links">
@@ -98,9 +181,37 @@
           </span>
           <span class="link__arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="link" href="#" data-todo="parceiro-mimo-galeria" target="_blank" rel="noopener sponsored">
+        <a class="link" href="https://selvvva.com/" target="_blank" rel="noopener sponsored">
+          <span class="link__text">
+            <span class="link__title">Selvvva</span>
+            <span class="link__sub">Design, decoração e paisagismo · cupom JULIA10</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="link" href="https://parafuzo.com/" target="_blank" rel="noopener sponsored">
+          <span class="link__text">
+            <span class="link__title">Parafuzo</span>
+            <span class="link__sub">Faxina e montagem de móveis · cupom JULIA35</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="link" href="https://www.mimogaleria.com.br/" target="_blank" rel="noopener sponsored">
           <span class="link__text">
             <span class="link__title">Mimo Galeria</span>
+            <span class="link__sub">Ver a loja</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="link" href="https://www.kokesampa.com.br/" target="_blank" rel="noopener sponsored">
+          <span class="link__text">
+            <span class="link__title">KokeSampa</span>
+            <span class="link__sub">Ver a loja</span>
+          </span>
+          <span class="link__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="link" href="https://www.helinhadecor.com.br/" target="_blank" rel="noopener sponsored">
+          <span class="link__text">
+            <span class="link__title">Helinha Decor</span>
             <span class="link__sub">Ver a loja</span>
           </span>
           <span class="link__arrow" aria-hidden="true">↗</span>
@@ -109,69 +220,6 @@
           <span class="link__text">
             <span class="link__title">Estúdio Joá</span>
             <span class="link__sub">Arte e artesanato do Norte · cupom JULIA10</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-atelier-da-renata" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Atelier da Renata</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="https://selvvva.com/" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Selvvva</span>
-            <span class="link__sub">Design, decoração e paisagismo · cupom JULIA10</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-kokesampa" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">KokeSampa</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-desfiacoco" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Desfiacoco</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-todo-recado" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Todo Recado</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-helinha-decor" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Helinha Decor</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-doo-ceramics" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Doo Ceramics</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="#" data-todo="parceiro-edu-euka" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Edu Euka</span>
-            <span class="link__sub">Ver a loja</span>
-          </span>
-          <span class="link__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link" href="https://parafuzo.com/" target="_blank" rel="noopener sponsored">
-          <span class="link__text">
-            <span class="link__title">Parafuzo</span>
-            <span class="link__sub">Faxina e montagem de móveis · cupom JULIA35</span>
           </span>
           <span class="link__arrow" aria-hidden="true">↗</span>
         </a>

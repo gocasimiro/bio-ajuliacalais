@@ -96,10 +96,21 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 | `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
 | `serie-colecao` | link da coleção da série no Instagram |
 | `achadinho-*` | achadinhos reais + link de cada um |
-| `parceiro-*` | endereço das 8 marcas restantes (WestWing, Selvvva, Estúdio Joá e Parafuzo já estão ligadas) |
 | `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
-**E-mail, Instagram e os 4 cupons de desconto já estão reais e funcionando.**
+**Já estão reais e funcionando:** e-mail, Instagram, os 4 cupons de desconto e
+as 7 marcas parceiras. Falta só o media kit em PDF, os achadinhos e o link da
+série.
+
+### Endereços conferidos
+
+Todos os links de loja responderam `200`. Dois foram normalizados para apontar
+direto no destino final, sem salto de redirecionamento:
+
+| Informado | Publicado | Motivo |
+|---|---|---|
+| `http://selvvva.com/` | `https://selvvva.com/` | o próprio site redireciona para HTTPS |
+| `https://parafuzo.com.br/` | `https://parafuzo.com/` | o `.com.br` redireciona para o `.com` |
 
 ---
 
