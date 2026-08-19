@@ -36,23 +36,101 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type":"CollectionPage",
-      "@id":"https://bio.juliacalais.com.br/cupons-de-desconto/#pagina",
-      "url":"https://bio.juliacalais.com.br/cupons-de-desconto/",
-      "name":"Cupons de desconto — Júlia Calais",
-      "description":"Todos os cupons de desconto da Júlia Calais reunidos em um lugar só, sempre atualizados.",
-      "inLanguage":"pt-BR",
-      "isPartOf":{"@id":"https://bio.juliacalais.com.br/#site"},
-      "about":{"@id":"https://bio.juliacalais.com.br/#pessoa"}
+      "@type": "CollectionPage",
+      "@id": "https://bio.juliacalais.com.br/cupons-de-desconto/#pagina",
+      "url": "https://bio.juliacalais.com.br/cupons-de-desconto/",
+      "name": "Cupons de desconto — Júlia Calais",
+      "description": "Todos os cupons de desconto da Júlia Calais reunidos em um lugar só, sempre atualizados.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://bio.juliacalais.com.br/#site"
+      },
+      "about": {
+        "@id": "https://bio.juliacalais.com.br/#pessoa"
+      }
     },
     {
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Júlia Calais","item":"https://bio.juliacalais.com.br/"},
-        {"@type":"ListItem","position":2,"name":"Cupons de desconto","item":"https://bio.juliacalais.com.br/cupons-de-desconto/"}
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Júlia Calais",
+          "item": "https://bio.juliacalais.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cupons de desconto",
+          "item": "https://bio.juliacalais.com.br/cupons-de-desconto/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Cupons de desconto — Júlia Calais",
+      "numberOfItems": 4,
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Offer",
+            "name": "WestWing — 10% de desconto com o cupom CALAISAFW",
+            "url": "https://www.westwing.com.br/",
+            "seller": {
+              "@type": "Organization",
+              "name": "WestWing",
+              "url": "https://www.westwing.com.br/"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Offer",
+            "name": "Parafuzo — 35% de desconto com o cupom JULIA35",
+            "url": "https://parafuzo.com/",
+            "seller": {
+              "@type": "Organization",
+              "name": "Parafuzo",
+              "url": "https://parafuzo.com/"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Offer",
+            "name": "Selvvva — 10% de desconto com o cupom JULIA10",
+            "url": "https://selvvva.com/",
+            "seller": {
+              "@type": "Organization",
+              "name": "Selvvva",
+              "url": "https://selvvva.com/"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Offer",
+            "name": "Estúdio Joá — 10% de desconto com o cupom JULIA10",
+            "url": "https://estudiojoa.com.br/",
+            "seller": {
+              "@type": "Organization",
+              "name": "Estúdio Joá",
+              "url": "https://estudiojoa.com.br/"
+            }
+          }
+        }
       ]
     }
   ]
@@ -86,46 +164,52 @@
 
   <main id="conteudo">
 
-    <p class="note"><b>Este bloco é um modelo.</b> Os itens abaixo servem só para você ver o estilo pronto — troque pelo conteúdo real e apague este aviso antes de divulgar o link.</p>
-
     <section class="group" aria-labelledby="g-cupons">
       <h2 class="eyebrow" id="g-cupons">Cupons ativos</h2>
       <div class="coupons">
         <article class="coupon">
-          <h3 class="coupon__brand">Nome da marca 1</h3>
-          <p class="coupon__desc">Descrição curta do que a marca vende.</p>
+          <h3 class="coupon__brand">WestWing</h3>
+          <p class="coupon__desc">Móveis, decoração, design de interiores e mesa posta — onde eu garimpo quando quero peça com cara de projeto.</p>
           <div class="coupon__row">
-            <button type="button" class="coupon__code" data-code="CODIGO1" aria-label="Copiar o cupom CODIGO1">
-              CODIGO1 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            <button type="button" class="coupon__code" data-code="CALAISAFW" aria-label="Copiar o cupom CALAISAFW da WestWing">
+              CALAISAFW <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
             </button>
             <span class="coupon__off">10% de desconto</span>
           </div>
-          <!-- TODO(link): endereço da loja -->
-          <a class="coupon__cta" href="#" data-todo="loja-codigo1" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
+          <a class="coupon__cta" href="https://www.westwing.com.br/" target="_blank" rel="noopener sponsored">Ir para a WestWing <span aria-hidden="true">↗</span></a>
         </article>
         <article class="coupon">
-          <h3 class="coupon__brand">Nome da marca 2</h3>
-          <p class="coupon__desc">Descrição curta do que a marca vende.</p>
+          <h3 class="coupon__brand">Parafuzo</h3>
+          <p class="coupon__desc">Faxina, passadeira e montagem de móveis: você encontra o profissional certo pelo app, sem perrengue.</p>
           <div class="coupon__row">
-            <button type="button" class="coupon__code" data-code="CODIGO2" aria-label="Copiar o cupom CODIGO2">
-              CODIGO2 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            <button type="button" class="coupon__code" data-code="JULIA35" aria-label="Copiar o cupom JULIA35 da Parafuzo">
+              JULIA35 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
             </button>
-            <span class="coupon__off">15% de desconto</span>
+            <span class="coupon__off">35% de desconto</span>
           </div>
-          <!-- TODO(link): endereço da loja -->
-          <a class="coupon__cta" href="#" data-todo="loja-codigo2" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
+          <a class="coupon__cta" href="https://parafuzo.com/" target="_blank" rel="noopener sponsored">Ir para a Parafuzo <span aria-hidden="true">↗</span></a>
         </article>
         <article class="coupon">
-          <h3 class="coupon__brand">Nome da marca 3</h3>
-          <p class="coupon__desc">Descrição curta do que a marca vende.</p>
+          <h3 class="coupon__brand">Selvvva</h3>
+          <p class="coupon__desc">Design, decoração e paisagismo brasileiros para trazer a natureza para dentro de casa.</p>
           <div class="coupon__row">
-            <button type="button" class="coupon__code" data-code="CODIGO3" aria-label="Copiar o cupom CODIGO3">
-              CODIGO3 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            <button type="button" class="coupon__code" data-code="JULIA10" aria-label="Copiar o cupom JULIA10 da Selvvva">
+              JULIA10 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
             </button>
-            <span class="coupon__off">Frete grátis</span>
+            <span class="coupon__off">10% de desconto</span>
           </div>
-          <!-- TODO(link): endereço da loja -->
-          <a class="coupon__cta" href="#" data-todo="loja-codigo3" target="_blank" rel="noopener">Ir para a loja <span aria-hidden="true">↗</span></a>
+          <a class="coupon__cta" href="https://selvvva.com/" target="_blank" rel="noopener sponsored">Ir para a Selvvva <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="coupon">
+          <h3 class="coupon__brand">Estúdio Joá</h3>
+          <p class="coupon__desc">Arte, design e curadoria que celebram a cultura e o artesanato do Norte do Brasil.</p>
+          <div class="coupon__row">
+            <button type="button" class="coupon__code" data-code="JULIA10" aria-label="Copiar o cupom JULIA10 da Estúdio Joá">
+              JULIA10 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+            </button>
+            <span class="coupon__off">10% de desconto</span>
+          </div>
+          <a class="coupon__cta" href="https://estudiojoa.com.br/" target="_blank" rel="noopener sponsored">Ir para a Estúdio Joá <span aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>

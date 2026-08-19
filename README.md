@@ -95,12 +95,11 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 |---|---|
 | `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
 | `serie-colecao` | link da coleção da série no Instagram |
-| `loja-codigo1…3` | cupons reais + endereço de cada loja |
 | `achadinho-*` | achadinhos reais + link de cada um |
-| `parceiro-*` | endereço de cada marca (os nomes já são os reais) |
+| `parceiro-*` | endereço das 8 marcas restantes (WestWing, Selvvva, Estúdio Joá e Parafuzo já estão ligadas) |
 | `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
-**E-mail e Instagram já estão reais e funcionando.**
+**E-mail, Instagram e os 4 cupons de desconto já estão reais e funcionando.**
 
 ---
 
