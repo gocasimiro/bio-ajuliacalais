@@ -241,6 +241,7 @@ section:last-of-type{margin-bottom:0}
 .feature__body{padding:20px 18px 18px}
 .feature__title{font-family:var(--f-display); font-size:23px; line-height:1.2}
 .feature__desc{font-size:15.5px; line-height:1.5; color:var(--ink-2); margin:10px 0 0}
+.feature__ctas{display:flex; flex-wrap:wrap; gap:0 24px}
 .feature__cta,
 .coupon__cta{
   display:inline-flex;

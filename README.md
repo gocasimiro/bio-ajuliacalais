@@ -33,10 +33,9 @@ Não há build nem instalação. Editar o HTML e dar push já publica.
 
 1. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
 2. **Cupons, parceiros & achadinhos** — entrada para as três abas
-3. **Meu conteúdo** — Instagram
-4. **Em destaque** — a série "na minha casa tem"
-5. **Marcas que já passaram por aqui**
-6. **Fala comigo** — e-mail, Instagram e localização
+3. **Meu conteúdo** — a série "na minha casa tem" e o Instagram
+4. **Marcas que já passaram por aqui**
+5. **Fala comigo** — e-mail, Instagram e localização
 
 ### Rótulo × rota
 
