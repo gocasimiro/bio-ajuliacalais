@@ -33,7 +33,7 @@ Não há build nem instalação. Editar o HTML e dar push já publica.
 
 1. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
 2. **Cupons, parceiros & achadinhos** — entrada para as três abas
-3. **Meu conteúdo** — a série "na minha casa tem" e o Instagram
+3. **Meu conteúdo** — Instagram
 4. **Marcas que já passaram por aqui**
 5. **Fala comigo** — e-mail, Instagram e localização
 
@@ -100,13 +100,11 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 | Marcador | O que falta |
 |---|---|
 | `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
-| `serie-colecao` | link da coleção da série no Instagram |
 | `achadinho-*` | achadinhos reais + link de cada um |
 | `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
 **Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto e
-as 12 marcas parceiras. Falta só o media kit em PDF, os achadinhos e o link da
-série.
+as 12 marcas parceiras. Falta só o media kit em PDF e os achadinhos.
 
 ### Endereços conferidos
 
@@ -174,6 +172,17 @@ Tudo que é cor, fonte e largura está em `assets/styles.css`, no bloco `:root`:
 --accent: #D6491F;   /* terracota (hover/foco) */
 --col:    500px;     /* largura da coluna      */
 ```
+
+Cada seção da home tem uma cor (`<section class="tone tone--…">`), usada
+só na etiqueta do título e no hover dos botões:
+
+| Classe | Cor | Seção |
+|---|---|---|
+| `tone--terracota` | `#D6491F` | Bora trabalhar juntos? |
+| `tone--limao` | `#DFE59D` | Cupons, parceiros & achadinhos |
+| `tone--azul` | `#00699E` | Meu conteúdo |
+| `tone--tinta` | `#43301D` | Marcas |
+| `tone--areia` | `#EDE4CE` | Fala comigo |
 
 ---
 

@@ -168,6 +168,24 @@ h1,h2,h3{font-weight:400; margin:0}
 section{margin:0 0 40px}
 section:last-of-type{margin-bottom:0}
 
+/* ── cor por seção (home) ──────────────────────────────────
+   Toque discreto: a cor de cada seção aparece só na etiqueta do
+   título e no hover dos botões. O fundo continua o creme de sempre. */
+.tone--terracota{--tone:var(--accent); --tone-fg:var(--card)}
+.tone--limao{--tone:var(--lime); --tone-fg:var(--ink)}
+.tone--azul{--tone:#00699E; --tone-fg:var(--card)}
+.tone--tinta{--tone:var(--ink); --tone-fg:var(--card)}
+.tone--areia{--tone:#EDE4CE; --tone-fg:var(--ink)}
+
+.tone .eyebrow{background:var(--tone); border-color:var(--tone); color:var(--tone-fg)}
+.tone--limao .eyebrow,
+.tone--areia .eyebrow{border-color:rgba(67,48,29,.28)}
+
+.tone .link:hover{background:var(--tone); border-color:var(--tone); color:var(--tone-fg)}
+.tone .link:hover .link__sub,
+.tone .link:hover .link__arrow{color:var(--tone-fg)}
+.tone .link:hover .link__sub{opacity:.75}
+
 /* ── botões de link ────────────────────────────────────────── */
 .links{display:grid; gap:var(--gap)}
 
@@ -225,24 +243,6 @@ section:last-of-type{margin-bottom:0}
 /* item ainda sem destino definido */
 .link[data-todo][href="#"]{opacity:.6}
 
-/* ── card em destaque ──────────────────────────────────────── */
-.feature{
-  background:var(--card);
-  border:1px solid var(--rule);
-  border-radius:var(--radius);
-  overflow:hidden;
-}
-.feature img{
-  width:100%;
-  aspect-ratio:16/10;
-  object-fit:cover;
-  object-position:center 38%;
-}
-.feature__body{padding:20px 18px 18px}
-.feature__title{font-family:var(--f-display); font-size:23px; line-height:1.2}
-.feature__desc{font-size:15.5px; line-height:1.5; color:var(--ink-2); margin:10px 0 0}
-.feature__ctas{display:flex; flex-wrap:wrap; gap:0 24px}
-.feature__cta,
 .coupon__cta{
   display:inline-flex;
   align-items:center;
@@ -258,7 +258,6 @@ section:last-of-type{margin-bottom:0}
   padding-bottom:2px;
   transition:border-color .14s ease;
 }
-.feature__cta:hover,
 .coupon__cta:hover{border-bottom-color:var(--accent)}
 
 /* ── marcas ────────────────────────────────────────────────── */
@@ -488,8 +487,6 @@ section:last-of-type{margin-bottom:0}
   .tabs-wrap{margin-left:0; margin-right:0; padding-left:0; padding-right:0}
   .tabs{flex-wrap:wrap; overflow:visible}
 
-  .feature__body{padding:24px 22px 22px}
-
   /* listas em duas colunas assim que houver espaço */
   .links,
   .coupons{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -550,6 +547,6 @@ section:last-of-type{margin-bottom:0}
 /* ── impressão ─────────────────────────────────────────────── */
 @media print{
   .tabs-wrap,.socials,.skip{display:none}
-  .link,.coupon,.feature{border-color:#999; break-inside:avoid}
+  .link,.coupon{border-color:#999; break-inside:avoid}
   body{background:#fff}
 }
