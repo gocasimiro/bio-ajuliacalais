@@ -1,8 +1,17 @@
-/* Copia o código do cupom ao toque, com retorno visual.
+/* Copia o código do cupom ao toque, com retorno visual, e tira da página
+   os cupons vencidos.
    Sem dependências. Degrada para execCommand onde a Clipboard API não existe
    (Safari antigo, páginas servidas por http). */
 (function () {
   'use strict';
+
+  /* cupom com data-expira="AAAA-MM-DD" sai da página depois do fim desse dia
+     (horário de Brasília) */
+  var agora = Date.now();
+  document.querySelectorAll('[data-expira]').forEach(function (cupom) {
+    var fim = Date.parse(cupom.dataset.expira + 'T23:59:59-03:00');
+    if (fim < agora) cupom.remove();
+  });
 
   function copiar(texto) {
     if (navigator.clipboard && window.isSecureContext) {

@@ -68,6 +68,13 @@ PDF não estiver lá, o botão cai na página 404. Detalhes em
 `data-code` (o código em si), o desconto e o `href` da loja. O botão de copiar
 funciona sozinho, não precisa mexer no JS.
 
+Cupom com condições (uso único, prazo, valor mínimo) ganha uma linha
+`<p class="coupon__terms">` logo antes do botão da loja.
+
+**Cupom com prazo** — acrescentar `data-expira="AAAA-MM-DD"` no `<article>`.
+No dia seguinte à data, o cupom some da página sozinho, sem precisar de
+commit. Para limpar o código de vez, é só apagar o bloco depois.
+
 **Um achadinho** — copiar um bloco `<a class="link">` dentro do grupo do cômodo
 certo em `links-de-produtos/index.html`. Para criar um cômodo novo, copiar a
 `<section class="group">` inteira com seu `<h2 class="eyebrow">`.
@@ -98,7 +105,7 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 | `achadinho-*` | achadinhos reais + link de cada um |
 | `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
-**Já estão reais e funcionando:** e-mail, Instagram, os 4 cupons de desconto e
+**Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto e
 as 12 marcas parceiras. Falta só o media kit em PDF, os achadinhos e o link da
 série.
 
