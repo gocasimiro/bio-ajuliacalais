@@ -103,7 +103,7 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 | — | nada pendente no momento |
 
 **Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto,
-as 12 marcas parceiras e o media kit em PDF.
+as 15 marcas parceiras e o media kit em PDF.
 
 ### Endereços conferidos
 
