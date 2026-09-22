@@ -115,10 +115,8 @@ direto no destino final, sem salto de redirecionamento:
 | `http://selvvva.com/` | `https://selvvva.com/` | o próprio site redireciona para HTTPS |
 | `https://parafuzo.com.br/` | `https://parafuzo.com/` | o `.com.br` redireciona para o `.com` |
 
-O perfil `instagram.com/atelierdarenat` **não deu para verificar** — o Instagram
-bloqueia leitura sem login. O endereço foi publicado exatamente como veio, mas
-o handle parece cortado (o natural seria `atelierdarenata`). Vale abrir uma vez
-para confirmar.
+O Atelier da Renata chegou como `instagram.com/atelierdarenat` (cortado) e foi
+corrigido para `instagram.com/atelierdarenata`, confirmado pela Júlia.
 
 ---
 
