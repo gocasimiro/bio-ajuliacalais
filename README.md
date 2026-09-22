@@ -23,7 +23,7 @@ assets/
   styles.css                  folha de estilo única, tokens no topo
   copy-code.js                copiar cupom (só a aba de cupons carrega)
   fonts/*.woff2               Playfair Display (SIL OFL 1.1), self-hosted
-  media-kit/                  ← COLOQUE O PDF AQUI (ver LEIA-ME.txt)
+  media-kit/                  PDF do Media Kit 2026
   img/                        capa, destaque, preview social e ícones
 ```
 
@@ -48,15 +48,15 @@ posicionamento — se um dia for preciso mudar mesmo, tem que vir com redirect.
 
 ## O media kit em PDF
 
-O botão da home já aponta para o caminho certo. Basta salvar o arquivo em:
+O botão "Media Kit 2026" da home abre:
 
 ```
 assets/media-kit/media-kit-julia-calais-2026.pdf
 ```
 
-com esse nome exato (minúsculo, com hifens, sem acento) e dar push. Enquanto o
-PDF não estiver lá, o botão cai na página 404. Detalhes em
-`assets/media-kit/LEIA-ME.txt`.
+Para atualizar, basta substituir o arquivo mantendo **o mesmo nome** e dar push —
+o link não muda. Se o nome mudar (ex.: kit de 2027), trocar também o `href` do
+botão no `index.html`.
 
 ---
 
@@ -99,11 +99,10 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 
 | Marcador | O que falta |
 |---|---|
-| `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
 | `achadinho-*` | achadinhos reais + link de cada um |
 
-**Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto e
-as 12 marcas parceiras. Falta só o media kit em PDF e os achadinhos.
+**Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto,
+as 12 marcas parceiras e o media kit em PDF. Faltam só os achadinhos.
 
 ### Endereços conferidos
 
