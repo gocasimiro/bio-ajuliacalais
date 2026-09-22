@@ -175,19 +175,6 @@ Tudo que é cor, fonte e largura está em `assets/styles.css`, no bloco `:root`:
 --col:    500px;     /* largura da coluna      */
 ```
 
-Cada seção da home é uma faixa de cor (`<section class="band band--…">`).
-As variações ficam logo abaixo de `.band` no CSS:
-
-| Classe | Cor | Seção |
-|---|---|---|
-| `band--terracota` | `#D6491F` | Bora trabalhar juntos? |
-| `band--limao` | `#DFE59D` | Cupons, parceiros & achadinhos |
-| `band--azul` | `#00699E` | Meu conteúdo |
-| `band--tinta` | `#43301D` | Marcas |
-| `band--areia` | `#EDE4CE` | Fala comigo |
-
-Para trocar a cor de uma seção, basta trocar a classe no HTML.
-
 ---
 
 ## Ver localmente
