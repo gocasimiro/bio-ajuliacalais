@@ -319,6 +319,8 @@ section:last-of-type{margin-bottom:0}
   gap:16px;
   flex-wrap:wrap;
 }
+.foot a{color:inherit; text-underline-offset:2px}   /* aviso de cookies: discreto de propósito */
+.foot a:hover{color:var(--accent)}
 
 /* ═══════════════ PÁGINAS INTERNAS ═══════════════ */
 
