@@ -166,7 +166,7 @@ eventos próprios do projeto:
 Marca, cupom e origem saem do próprio HTML (nome da marca, `data-code`,
 seção), então cupom ou parceiro novo já entra medido, sem mexer no JS.
 
-No GA, `copiar_cupom`, `contato_email` e `file_download` estão marcados como
+No GA, `copiar_cupom`, `contato_email` e `file_download` devem ser marcados como
 **eventos-chave**. Para ver `marca`, `cupom` e `origem` nos relatórios, cada
 um precisa estar cadastrado como dimensão personalizada (Admin → Custom
 definitions, escopo *Event*).
