@@ -22,6 +22,7 @@ CNAME                         domínio do Pages (links.juliacalais.com)
 assets/
   styles.css                  folha de estilo única, tokens no topo
   copy-code.js                copiar cupom (só a aba de cupons carrega)
+  eventos.js                  eventos próprios do Google Analytics
   fonts/*.woff2               Playfair Display (SIL OFL 1.1), self-hosted
   media-kit/                  PDF do Media Kit 2026
   img/                        capa, destaque, preview social e ícones
@@ -150,8 +151,25 @@ A tag fica logo depois do `<head>` em `index.html`, `cupons-de-desconto/`,
 `parceiros/` e `404.html`. Página nova precisa receber o mesmo bloco.
 `links-de-produtos/` fica sem, porque redireciona na hora.
 
-A medição avançada do GA já registra sozinha os cliques que saem do site
-(lojas parceiras, Instagram), sem código extra.
+A medição avançada do GA já registra sozinha as visitas (`page_view`), os
+cliques que saem do site (`click`) e o download do media kit (`file_download`).
+
+`assets/eventos.js` (carregado na home, em cupons e em parceiros) manda os
+eventos próprios do projeto:
+
+| Evento | Parâmetros | Quando |
+|---|---|---|
+| `copiar_cupom` | `marca`, `cupom` | toque no botão de copiar cupom |
+| `contato_email` | `origem` (`publicidade` / `contato`) | toque num link de e-mail |
+| `clique_parceiro` | `marca`, `pagina` (`cupons` / `parceiros`) | ida para a loja de uma marca |
+
+Marca, cupom e origem saem do próprio HTML (nome da marca, `data-code`,
+seção), então cupom ou parceiro novo já entra medido, sem mexer no JS.
+
+No GA, `copiar_cupom`, `contato_email` e `file_download` estão marcados como
+**eventos-chave**. Para ver `marca`, `cupom` e `origem` nos relatórios, cada
+um precisa estar cadastrado como dimensão personalizada (Admin → Custom
+definitions, escopo *Event*).
 
 ---
 
