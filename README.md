@@ -14,7 +14,7 @@ identidade visual herdada do Media Kit 2026 (creme, marrom, terracota e limão).
 index.html                    home
 cupons-de-desconto/index.html aba de cupons (com botão de copiar o código)
 parceiros/index.html          aba de marcas parceiras
-links-de-produtos/index.html  aba de achadinhos, agrupada por cômodo
+links-de-produtos/index.html  redireciona para a home (aba de achadinhos desativada)
 404.html                      erro amigável
 robots.txt / sitemap.xml
 CNAME                         domínio do Pages (links.juliacalais.com)
@@ -31,19 +31,20 @@ Não há build nem instalação. Editar o HTML e dar push já publica.
 
 ### Seções da home
 
-1. **Cupons, parceiros & achadinhos** — entrada para as três abas (vem primeiro
+1. **Cupons & parceiros** — entrada para as duas abas (vem primeiro
    porque é o que os seguidores procuram)
 2. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
 3. **Meu conteúdo** — Instagram
 4. **Marcas que já passaram por aqui**
 5. **Fala comigo** — e-mail, Instagram e localização
 
-### Rótulo × rota
+### Achadinhos desativados
 
-A aba de achadinhos aparece como **"Links de achadinhos"**, mas a rota continua
-sendo `/links-de-produtos/`. Isso é de propósito: o rótulo é o que a pessoa lê,
-a rota é o que o Google já indexou. Trocar a URL derrubaria o histórico de
-posicionamento — se um dia for preciso mudar mesmo, tem que vir com redirect.
+A aba de achadinhos saiu do site: eram muitos links e eles expiram com
+frequência, então não compensava manter. O endereço antigo `/links-de-produtos/`
+não foi apagado — virou um redirecionamento para a home (com `noindex`), para
+quem ainda tiver o link não cair na 404. Se um dia a aba voltar, é recriar a
+página nesse mesmo endereço e religar o botão na home e as abas.
 
 ---
 
@@ -75,17 +76,10 @@ Cupom com condições (uso único, prazo, valor mínimo) ganha uma linha
 No dia seguinte à data, o cupom some da página sozinho, sem precisar de
 commit. Para limpar o código de vez, é só apagar o bloco depois.
 
-**Um achadinho** — copiar um bloco `<a class="link">` dentro do grupo do cômodo
-certo em `links-de-produtos/index.html`. Para criar um cômodo novo, copiar a
-`<section class="group">` inteira com seu `<h2 class="eyebrow">`.
-
 **Um parceiro** — mesma coisa em `parceiros/index.html`.
 
 **Um botão na home** — copiar um bloco `.link` dentro de `.links`. Para destacar,
 acrescentar a classe `link--primary` (fundo limão).
-
-> As três abas trazem itens de exemplo com um aviso em destaque no topo. Troque
-> pelo conteúdo real e **apague o `<p class="note">`** antes de divulgar o link.
 
 ---
 
@@ -100,10 +94,10 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 
 | Marcador | O que falta |
 |---|---|
-| `achadinho-*` | achadinhos reais + link de cada um |
+| — | nada pendente no momento |
 
 **Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto,
-as 12 marcas parceiras e o media kit em PDF. Faltam só os achadinhos.
+as 12 marcas parceiras e o media kit em PDF.
 
 ### Endereços conferidos
 
@@ -151,7 +145,7 @@ Detalhes que sustentam a navegação em qualquer tela:
 - **JSON-LD**: `WebSite` + `ProfilePage` + `Person` na home; `CollectionPage` +
   `BreadcrumbList` nas abas
 - Hierarquia de títulos correta — um `h1` por página, seções em `h2`, itens em `h3`
-- `sitemap.xml` com as quatro URLs e `robots.txt` liberando tudo
+- `sitemap.xml` com as três URLs e `robots.txt` liberando tudo
 - `404.html` com `noindex, follow`
 - Imagens com `width`/`height` declarados (não há salto de layout ao carregar),
   `alt` descritivo, `loading="lazy"` fora da dobra
@@ -177,7 +171,7 @@ só na etiqueta do título e no hover dos botões:
 
 | Classe | Cor | Seção |
 |---|---|---|
-| `tone--oliva` | `#6F7B00` | Cupons, parceiros & achadinhos |
+| `tone--oliva` | `#6F7B00` | Cupons & parceiros |
 | `tone--terracota` | `#D6491F` | Bora trabalhar juntos? |
 | `tone--azul` | `#00699E` | Meu conteúdo |
 | `tone--tinta` | `#43301D` | Marcas |
