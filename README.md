@@ -17,7 +17,7 @@ parceiros/index.html          aba de marcas parceiras
 links-de-produtos/index.html  aba de achadinhos, agrupada por cômodo
 404.html                      erro amigável
 robots.txt / sitemap.xml
-CNAME.example                 modelo do domínio (renomear para CNAME)
+CNAME                         domínio do Pages (links.juliacalais.com)
 .nojekyll                     desliga o Jekyll no Pages
 assets/
   styles.css                  folha de estilo única, tokens no topo
@@ -101,7 +101,6 @@ grep -rn 'data-todo\|TODO(' --include='*.html' --include='*.txt' --include='*.xm
 |---|---|
 | `media-kit-pdf` | salvar o PDF em `assets/media-kit/` |
 | `achadinho-*` | achadinhos reais + link de cada um |
-| `TODO(dns)` | trocar `bio.juliacalais.com.br` pelo domínio real em todos os HTML, `robots.txt` e `sitemap.xml` |
 
 **Já estão reais e funcionando:** e-mail, Instagram, os 8 cupons de desconto e
 as 12 marcas parceiras. Falta só o media kit em PDF e os achadinhos.
@@ -206,28 +205,24 @@ git add -A && git commit -m "atualiza links" && git push
 
 O Pages republica sozinho em ~1 minuto.
 
-> **Atenção:** GitHub Pages em repositório **privado** exige plano pago
-> (Pro/Team/Enterprise). Em conta gratuita é preciso deixar o repositório
-> público para o Pages servir a página — ou hospedar no Cloudflare Pages /
-> Netlify, que servem repositório privado de graça.
+O repositório é **público**, o que permite usar o Pages no plano gratuito.
 
 ---
 
 ## Domínio próprio
 
-1. Renomear `CNAME.example` para `CNAME` e deixar dentro **só** o domínio final,
-   sem `https://` e sem barra — ex.: `bio.juliacalais.com.br`
-2. No DNS do domínio, criar um registro **CNAME**:
+O site responde em **https://links.juliacalais.com**. O arquivo `CNAME` guarda
+esse domínio para o Pages; não apague.
 
-   | Tipo | Nome | Valor |
-   |---|---|---|
-   | CNAME | `bio` | `gocasimiro.github.io` |
+No DNS de `juliacalais.com` há um registro:
 
-   Para domínio raiz (sem subdomínio), usar 4 registros **A** apontando para
-   `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`.
-3. Em **Settings → Pages → Custom domain**, informar o domínio e aguardar a validação.
-4. Marcar **Enforce HTTPS** assim que o certificado sair (leva alguns minutos).
-5. Trocar o domínio em todos os `TODO(dns)`.
+| Tipo | Nome | Valor |
+|---|---|---|
+| CNAME | `links` | `gocasimiro.github.io` |
+
+Para trocar de domínio: editar o `CNAME`, trocar `links.juliacalais.com` em
+todos os HTML, `robots.txt` e `sitemap.xml`, apontar o DNS novo e atualizar
+em **Settings → Pages → Custom domain**.
 
 > O `404.html` usa caminhos absolutos (`/assets/...`), o que é o certo para
 > domínio próprio. Se você testar na URL de projeto do Pages

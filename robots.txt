@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO(dns): trocar pelo domínio final
-Sitemap: https://bio.juliacalais.com.br/sitemap.xml
+Sitemap: https://links.juliacalais.com/sitemap.xml
