@@ -95,9 +95,9 @@ h1,h2,h3{font-weight:400; margin:0}
 .cover{margin:0 calc(var(--pad) * -1) 26px}
 .cover img{
   width:100%;
-  aspect-ratio:950/1045;
+  aspect-ratio:1/1;               /* a foto já vem recortada no enquadramento final */
   object-fit:cover;
-  object-position:center 20%;
+  object-position:center;
 }
 
 /* ── cabeçalho ─────────────────────────────────────────────── */
@@ -481,7 +481,6 @@ section:last-of-type{margin-bottom:0}
     border-radius:var(--radius);
     overflow:hidden;
   }
-  .cover img{aspect-ratio:16/11}
 
   .tabs-wrap{margin-left:0; margin-right:0; padding-left:0; padding-right:0}
   .tabs{flex-wrap:wrap; overflow:visible}
@@ -514,7 +513,6 @@ section:last-of-type{margin-bottom:0}
     align-self:start;
   }
   .rail .cover{margin:0 0 26px}
-  .rail .cover img{aspect-ratio:950/1045}
   .rail .socials{margin-bottom:0}
   .content{min-width:0}
   .content > section:first-child{margin-top:0}
