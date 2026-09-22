@@ -135,7 +135,8 @@ Detalhes que sustentam a navegação em qualquer tela:
 
 - **Abas fixas** no topo das páginas internas — sempre alcançáveis ao rolar
 - Alvos de toque de **44px** nos ícones, abas e botões de cupom
-- Item ímpar sobrando no fim de uma lista ocupa a linha inteira, sem buraco
+- Item ímpar sobrando no fim de uma lista ocupa a linha inteira, sem buraco (menos na aba de
+  parceiros, onde todas as marcas ficam do mesmo tamanho)
 - Link **"pular para o conteúdo"** para teclado e leitor de tela
 - `scroll-behavior:smooth`, desligado para quem pede menos movimento
 - Folha de impressão enxuta

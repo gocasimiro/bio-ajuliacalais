@@ -490,8 +490,9 @@ section:last-of-type{margin-bottom:0}
   .coupons{grid-template-columns:repeat(2,minmax(0,1fr))}
   .links--single{grid-template-columns:1fr}
 
-  /* sobrando um item ímpar no fim, ele ocupa a linha toda — sem buraco */
-  .links > :last-child:nth-child(odd),
+  /* sobrando um item ímpar no fim, ele ocupa a linha toda — sem buraco.
+     Na aba de parceiros não: lá todas as marcas têm o mesmo tamanho. */
+  .page--home .links > :last-child:nth-child(odd),
   .coupons > :last-child:nth-child(odd){grid-column:1 / -1}
 }
 
