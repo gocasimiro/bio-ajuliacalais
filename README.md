@@ -31,8 +31,9 @@ Não há build nem instalação. Editar o HTML e dar push já publica.
 
 ### Seções da home
 
-1. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
-2. **Cupons, parceiros & achadinhos** — entrada para as três abas
+1. **Cupons, parceiros & achadinhos** — entrada para as três abas (vem primeiro
+   porque é o que os seguidores procuram)
+2. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
 3. **Meu conteúdo** — Instagram
 4. **Marcas que já passaram por aqui**
 5. **Fala comigo** — e-mail, Instagram e localização
@@ -176,8 +177,8 @@ só na etiqueta do título e no hover dos botões:
 
 | Classe | Cor | Seção |
 |---|---|---|
-| `tone--terracota` | `#D6491F` | Bora trabalhar juntos? |
 | `tone--oliva` | `#6F7B00` | Cupons, parceiros & achadinhos |
+| `tone--terracota` | `#D6491F` | Bora trabalhar juntos? |
 | `tone--azul` | `#00699E` | Meu conteúdo |
 | `tone--tinta` | `#43301D` | Marcas |
 | `tone--areia` | `#EDE4CE` | Fala comigo |
