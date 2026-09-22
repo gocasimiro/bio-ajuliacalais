@@ -179,7 +179,7 @@ só na etiqueta do título e no hover dos botões:
 | Classe | Cor | Seção |
 |---|---|---|
 | `tone--terracota` | `#D6491F` | Bora trabalhar juntos? |
-| `tone--limao` | `#DFE59D` | Cupons, parceiros & achadinhos |
+| `tone--oliva` | `#6F7B00` | Cupons, parceiros & achadinhos |
 | `tone--azul` | `#00699E` | Meu conteúdo |
 | `tone--tinta` | `#43301D` | Marcas |
 | `tone--areia` | `#EDE4CE` | Fala comigo |

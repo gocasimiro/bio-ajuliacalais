@@ -172,13 +172,12 @@ section:last-of-type{margin-bottom:0}
    Toque discreto: a cor de cada seção aparece só na etiqueta do
    título e no hover dos botões. O fundo continua o creme de sempre. */
 .tone--terracota{--tone:var(--accent); --tone-fg:var(--card)}
-.tone--limao{--tone:var(--lime); --tone-fg:var(--ink)}
+.tone--oliva{--tone:#6F7B00; --tone-fg:var(--card)}   /* oliva do Media Kit, escurecido para o texto creme passar no contraste */
 .tone--azul{--tone:#00699E; --tone-fg:var(--card)}
 .tone--tinta{--tone:var(--ink); --tone-fg:var(--card)}
 .tone--areia{--tone:#EDE4CE; --tone-fg:var(--ink)}
 
 .tone .eyebrow{background:var(--tone); border-color:var(--tone); color:var(--tone-fg)}
-.tone--limao .eyebrow,
 .tone--areia .eyebrow{border-color:rgba(67,48,29,.28)}
 
 .tone .link:hover{background:var(--tone); border-color:var(--tone); color:var(--tone-fg)}
