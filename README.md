@@ -14,7 +14,7 @@ identidade visual herdada do Media Kit 2026 (creme, marrom, terracota e limão).
 index.html                    home
 cupons-de-desconto/index.html aba de cupons (com botão de copiar o código)
 parceiros/index.html          aba de marcas parceiras
-links-de-produtos/index.html  redireciona para a home (aba de achadinhos desativada)
+links-de-produtos/index.html  redireciona para o destaque LINKS do Instagram
 404.html                      erro amigável
 robots.txt / sitemap.xml
 CNAME                         domínio do Pages (links.juliacalais.com)
@@ -31,20 +31,26 @@ Não há build nem instalação. Editar o HTML e dar push já publica.
 
 ### Seções da home
 
-1. **Cupons & parceiros** — entrada para as duas abas (vem primeiro
+1. **Cupons, parceiros & achadinhos** — as duas abas + achadinhos no Instagram (vem primeiro
    porque é o que os seguidores procuram)
 2. **Bora trabalhar juntos?** — contato para publicidade + Media Kit em PDF
 3. **Meu conteúdo** — Instagram
 4. **Marcas que já passaram por aqui**
 5. **Fala comigo** — e-mail, Instagram e localização
 
-### Achadinhos desativados
+### Achadinhos ficam no Instagram
 
-A aba de achadinhos saiu do site: eram muitos links e eles expiram com
-frequência, então não compensava manter. O endereço antigo `/links-de-produtos/`
-não foi apagado — virou um redirecionamento para a home (com `noindex`), para
-quem ainda tiver o link não cair na 404. Se um dia a aba voltar, é recriar a
-página nesse mesmo endereço e religar o botão na home e as abas.
+Não há mais aba de achadinhos no site: eram muitos links e eles expiram com
+frequência. O botão "Links de achadinhos" da home leva para o destaque **LINKS**
+do perfil, que a Júlia atualiza direto no Instagram:
+
+```
+https://www.instagram.com/stories/highlights/18036806789789327/
+```
+
+O endereço antigo `/links-de-produtos/` redireciona para esse destaque (com
+`noindex`), para quem ainda tiver o link. Se o destaque for recriado, o
+número muda: trocar o endereço na home e em `links-de-produtos/index.html`.
 
 ---
 
@@ -171,7 +177,7 @@ só na etiqueta do título e no hover dos botões:
 
 | Classe | Cor | Seção |
 |---|---|---|
-| `tone--oliva` | `#6F7B00` | Cupons & parceiros |
+| `tone--oliva` | `#6F7B00` | Cupons, parceiros & achadinhos |
 | `tone--terracota` | `#D6491F` | Bora trabalhar juntos? |
 | `tone--azul` | `#00699E` | Meu conteúdo |
 | `tone--tinta` | `#43301D` | Marcas |
