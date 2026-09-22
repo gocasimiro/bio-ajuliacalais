@@ -1,7 +1,7 @@
 # bio-ajuliacalais
 
 Página de links (link-in-bio) da **Júlia Calais** — site estático, sem build, sem
-dependências externas, hospedado no GitHub Pages.
+dependências externas (fora o Google Analytics), hospedado no GitHub Pages.
 
 Estrutura inspirada em [bio.micaeladicorrado.com](https://bio.micaeladicorrado.com/);
 identidade visual herdada do Media Kit 2026 (creme, marrom, terracota e limão).
@@ -140,6 +140,18 @@ Detalhes que sustentam a navegação em qualquer tela:
 - Link **"pular para o conteúdo"** para teclado e leitor de tela
 - `scroll-behavior:smooth`, desligado para quem pede menos movimento
 - Folha de impressão enxuta
+
+---
+
+## Analytics
+
+Google Analytics 4, propriedade **Links @ajuliacalais**, ID `G-2QK9WZHWXT`.
+A tag fica logo depois do `<head>` em `index.html`, `cupons-de-desconto/`,
+`parceiros/` e `404.html`. Página nova precisa receber o mesmo bloco.
+`links-de-produtos/` fica sem, porque redireciona na hora.
+
+A medição avançada do GA já registra sozinha os cliques que saem do site
+(lojas parceiras, Instagram), sem código extra.
 
 ---
 
